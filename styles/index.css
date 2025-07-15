@@ -182,7 +182,7 @@ body {
 }
 
 .song-title {
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--spotify-white);
     margin-bottom: 5px;
 }
@@ -226,7 +226,7 @@ body {
 .lyrics-line {
     color: var(--spotify-light-gray);
     margin: 15px 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     transition: all 0.3s ease;
     /* Prevent text selection during scroll */
     user-select: none;
