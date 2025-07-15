@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music World</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <section class="landing">
+        <h1>Mini Spotify</h1>
+        <p>Scroll and enjoy some music</p>
+        <div class="scroll-down" onclick="scrollToNextSection()">Scroll Down ▼</div>
+    </section>
+
+    <section class="music-section spotify-style" id="section1">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/505s.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">505</h2>
+                <p class="artist-name">Arctic Monkeys</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                <div class="lyrics-line">
+                        I'm going back to 505<br>
+                        If it's a seven hour flight or a forty-five minute drive<br>
+                        In my imagination, you're waitin' lyin' on your side<br>
+                        With your hands between your thighs<br>
+                        <br>
+                        Stop and wait a sec<br>
+                        When you look at me like that, my darlin', what did you expect?<br>
+                        I'd probably still adore you with your hands around my neck<br>
+                        Or I did last time I checked<br>
+                        <br>
+                        Not shy of a spark<br>
+                        The knife twists at the thought that I should fall short of the mark<br>
+                        Frightened by the bite, though it's no harsher than the bark<br>
+                        The middle of adventure, such a perfect place to start<br>
+                        <br>
+                        I'm going back to 505<br>
+                        If it's a seven hour flight or a forty-five minute drive<br>
+                        In my imagination, you're waitin' lyin' on your side<br>
+                        With your hands between your thighs<br>
+                        <br>
+                        But I crumble completely when you cry<br>
+                        It seems like once again you've had to greet me with goodbye<br>
+                        I'm always just about to go and spoil the surprise<br>
+                        Take my hands off of your eyes too soon<br>
+                        <br>
+                        I'm going back to 505<br>
+                        If it's a seven hour flight or a forty-five minute drive<br>
+                        In my imagination, you're waitin' lyin' on your side<br>
+                        With your hands between your thighs and a smile</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer1" loop>
+                    <source src="/music/music.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn1">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Let Down -->
+    <section class="music-section spotify-style" id="section2">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/letdowng.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">Let Down</h2>
+                <p class="artist-name">Radiohead</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                    <div class="lyrics-line">
+                            Transport, motorways and tramlines<br>
+                            Starting and then stopping<br>
+                            Taking off and landing<br>
+                            The emptiest of feelings, disappointed people<br>
+                            Clinging onto bottles<br>
+                            When it comes, it's so, so disappointing<br>
+                            <br>
+                            Let down and hanging around<br>
+                            Crushed like a bug in the ground<br>
+                            Let down and hanging around<br>
+                            Shell smashed, juices flowing<br>
+                            Wings twitch, legs are going<br>
+                            Don't get sentimental<br>
+                            It always ends up drivel<br>
+                            <br>
+                            One day, I am gonna grow wings<br>
+                            A chemical reaction<br>
+                            Hysterical and useless<br>
+                            Hysterical and<br>
+                            Let down and hanging around<br>
+                            Crushed like a bug in the ground<br>
+                            Let down and hanging around<br>
+                            <br>
+                            Let down again<br>
+                            Let down again<br>
+                            Let down again<br>
+                            <br>
+                            You know, you know where you are with<br>
+                            You know where you are with<br>
+                            Floor collapses, floating<br>
+                            Bouncing back and<br>
+                            <br>
+                            One day, I am gonna grow wings<br>
+                            A chemical reaction (you know where you are)<br>
+                            Hysterical and useless (you know where you are)<br>
+                            Hysterical and (you know where you are)<br>
+                            <br>
+                            Let down and hanging around<br>
+                            Crushed like a bug in the ground<br>
+                            Let down and hanging around</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer2" loop>
+                    <source src="/music/letdown.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn2">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Touch -->
+    <section class="music-section spotify-style" id="section3">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/touch.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">Touch</h2>
+                <p class="artist-name">Cigarettes After Sex</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                    <div class="lyrics-line">
+                        Oh, I missed you and I cried<br>
+                        But I said that I was alright<br>
+                        And I know it's been a while<br>
+                        Since I needed a distraction<br>
+                        <br>
+                        ’Cause I wanna do everything<br>
+                        That you want me to, to tell you the truth<br>
+                        I need to stay alive<br>
+                        So sad that I could die<br>
+                        <br>
+                        It's leading me on, every time we touch<br>
+                        Leading me on, every time it hurts<br>
+                        Feeling so lonely, 'cause it’s not enough<br>
+                        Missin' you only, ever since we fell in love<br>
+                        <br>
+                        And I watched you do a line<br>
+                        That you spread out on the table<br>
+                        I don't need to see you wired<br>
+                        I just wanna see you upside down<br>
+                        <br>
+                        I wanna do everything<br>
+                        That you want me to, to tell you the truth<br>
+                        I listen to you cry all night<br>
+                        Through the telephone<br>
+                        <br>
+                        It's leading me on, every time we touch<br>
+                        Leading me on, every time it hurts<br>
+                        Feeling so lonely, 'cause it's not enough<br>
+                        Missin' you only, ever since we fell in love<br>
+                        Couldn't say you didn’t want me then<br>
+                        When we were lyin’ in my bed that night<br>
+                        <br>
+                        You were acting like a different person<br>
+                        As if suddenly you wanted to just be friends<br>
+                        I was hurt and so I took a shower<br>
+                        So you couldn't hear me, knowing I had to cry<br>
+                        Sad to know that while my heart was breaking<br>
+                        You were sleeping or just faking<br>
+                        <br>
+                        It’s leading me on, every time we touch<br>
+                        Leading me on, every time it hurts<br>
+                        Feeling so lonely, 'cause it's not enough<br>
+                        Missin' you only, ever since we fell in love</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer3" loop>
+                    <source src="/music/touch.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn3">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-section spotify-style" id="section4">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/seasons.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">Seasons</h2>
+                <p class="artist-name">Wave to Earth</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                    <div class="lyrics-line">
+                        I can't be your love<br>
+                        Look, it's too trivial for you now<br>
+                        Oh, my life is fallin' apart<br>
+                        Maybe no one will notice if I disappear<br>
+                        <br>
+                        But I'll pray for you all the time<br>
+                        If I could be by your side<br>
+                        I'll give you all my life, my seasons<br>
+                        <br>
+                        I can't be your love<br>
+                        'Cause I'm afraid I'll ruin your life, hmm
+                        <br>
+                        <br>
+                        While the leaves withered away<br>
+                        And grew again<br>
+                        You have gone far away<br>
+                        I'll be pushing up daisies<br>
+                        And bring all the chances to here<br>
+                        <br>
+                        But I'll pray for you all the time<br>
+                        If I could be by your side<br>
+                        I'll give you all my life, my seasons<br>
+                        By your side, I'll be your seasons, hmm<br>
+                        My love</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer4" loop>
+                    <source src="/music/seasons.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn4">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-section spotify-style" id="section5">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/multo.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">Multo</h2>
+                <p class="artist-name">Cup of Joe</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                    <div class="lyrics-line">
+                    Humingang malalim, pumikit na muna<br>
+                    At baka-sakaling namamalikmata lang<br>
+                    Ba't nababahala? 'Di ba't ako'y mag-isa?<br>
+                    'Kala ko'y payapa, boses mo'y tumatawag pa <br>
+                    <br>
+                    Binaon naman na ang lahat<br>
+                    Tinakpan naman na 'king sugat<br>
+                    Ngunit ba't ba andito pa rin?<br>
+                    Hirap na 'kong intindihin<br>
+                    <br>
+                    Tanging panalangin, lubayan na sana<br>
+                    Dahil sa bawat tingin, mukha mo'y nakikita<br>
+                    Kahit sa'n man mapunta ay anino mo'y kumakapit sa 'king kamay<br>
+                    Ako ay dahan-dahang nililibing nang buhay pa<br>
+                    <br>
+                    Hindi na makalaya<br>
+                    Dinadalaw mo 'ko bawat gabi<br>
+                    Wala mang nakikita<br>
+                    Haplos mo'y ramdam pa rin sa dilim<br>
+                    <br>
+                    Hindi na nananaginip<br>
+                    Hindi na ma-makagising<br>
+                    Pasindi na ng ilaw<br>
+                    Minumulto na 'ko ng damdamin ko<br>
+                    <br>
+                    Ng damdamin ko<br>
+                    'Di mo ba ako lilisanin?<br>
+                    Hindi pa ba sapat pagpapahirap sa 'kin? (Damdamin ko)<br>
+                    Hindi na ba ma-mamamayapa?<br>
+                    Hindi na ba ma-mamamayapa?<br>
+                    <br>
+                    Hindi na makalaya<br>
+                    Dinadalaw mo 'ko bawat gabi<br>
+                    Wala mang nakikita<br>
+                    Haplos mo'y ramdam pa rin sa dilim<br>
+                    <br>
+                    Hindi na nananaginip<br>
+                    Hindi na ma-makagising<br>
+                    Pasindi na ng ilaw<br>
+                    Minumulto na 'ko ng damdamin ko<br>
+                    <br>
+                    Ng damdamin ko
+                    Hindi mo ba ako lilisanin? (Makalaya)<br>
+                    (Dinadalaw mo 'ko bawat gabi) hindi pa ba sapat pagpapahirap sa 'kin?<br>
+                    (Wala mang nakikita) hindi na ba ma-mamamayapa?<br>
+                    (Haplos mo'y ramdam pa rin sa dilim) hindi na ba ma-mamamayapa?</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer5" loop>
+                    <source src="/music/multo.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn5">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-section spotify-style" id="section6">
+        <div class="album-art-wrapper">
+            <div class="album-art" style="background-image: url('/image/notherheart.jpg')"></div>
+        </div>
+        
+        <div class="player-container">
+            <div class="song-info">
+                <h2 class="song-title">No Other Heart</h2>
+                <p class="artist-name">Mac Demarco</p>
+            </div>
+            
+            <div class="lyrics-container">
+                <div class="lyrics-scroller">
+                    <div class="lyrics-line">
+                    Is it true?<br>
+                    You've been feelin' sort of low these days<br>
+                    Just don't have a place to go these days<br>
+                    Must be bringin' you down<br>
+                    <br>
+                    If it's so<br>
+                    Then come on, give this loverboy a try<br>
+                    I'll put the sparkle right back in your eyes<br>
+                    What could you lose?<br>
+                    <br>
+                    Well, for one, her heart belongs to another<br>
+                    And no other heart will do<br>
+                    <br>
+                    Is it wrong<br>
+                    To think my love could really help you out?<br>
+                    It's simply just my stubborn heart, no doubt<br>
+                    Rambling away<br>
+                    If it's not<br>
+                    <br>
+                    Then come on, give this loverboy a try<br>
+                    I'll put the sparkle right back in your eyes<br>
+                    What could you lose?<br>
+                    <br>
+                    Well, for one, her heart belongs to another<br>
+                    And no other heart will do<br>
+                    For one, her heart belongs to another<br>
+                    And no other heart will do<br>
+                    Oh
+                    Ah</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <audio id="musicPlayer6" loop>
+                    <source src="/music/nootherheart.mp3" type="audio/mpeg">
+                </audio>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls-row">
+                    <button class="control-btn shuffle">♫</button>
+                    <button class="control-btn prev">⏮</button>
+                    <button class="play-pause-btn" id="playPauseBtn6">▶</button>
+                    <button class="control-btn next">⏭</button>
+                    <button class="control-btn repeat">⟳</button>
+                </div>
+                <div class="volume-control">
+                    <span class="icon">🔈</span>
+                    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                    <span class="icon">🔊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
