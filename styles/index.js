@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
             buttonId: 'playPauseBtn6',
             startTime: 121.2,
             songName: 'No Other Heart'
+        },
+        {
+            id: 'section7',
+            audioId: 'musicPlayer7',
+            buttonId: 'playPauseBtn7',
+            startTime: 57.1,
+            songName: 'Always'
         }
         
 
